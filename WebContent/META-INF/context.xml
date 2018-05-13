@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/UserChat" docBase="www">
+<Resource
+	name="jdbc/orcl"
+	auth="Container"
+	type="javax.sql.DataSource"
+	driverClassName="oracle.jdbc.OracleDriver"
+	loginTimeout="10"
+	validationQuery="SELECT 1 FROM DUAL"
+	maxWait="5000"
+	username="PAGE"
+	password="1234"
+	testOnBorrow="true"
+	url="jdbc:oracle:thin:@localhost:1521:xe"/>
+	<ResourceLink type="javax.sql.data.DataSource"
+	name="jdbc/orcl"
+	global="jdbc/orcl"/>
+</Context>
